@@ -6,7 +6,7 @@ WORKDIR /app
 
 ADD requirements.txt /app
 
-ADD . /app
+ADD main.py /app
 
 RUN pip3 install -r requirements.txt
 
