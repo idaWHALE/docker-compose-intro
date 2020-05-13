@@ -9,3 +9,4 @@ The projects are:
 3. demo3 - set up message queue for Flask web application using Celery and Redis (WIP)
 4. demo4 - Docker container configuration manager with Consul (WIP)
 5. demo5 - Docker container monitoring with Prometheus and Grafana (WIP)
+6. demo6 - Docker container monitoring with Prometheus and ELK (WIP)
