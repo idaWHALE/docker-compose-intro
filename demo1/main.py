@@ -1,10 +1,14 @@
 import redis
 
+import os
 from flask import Flask
 
 
 app = Flask(__name__)
-redis = redis.Redis(host='redis', port=6379, db=0)
+redis = redis.StrictRedis(host=os.environ.get('REDIS_HOST'),
+			  port=os.environ.get('REDIS_PORT'),
+			  db=os.environ.get('REDIS_DB'),
+			  password=os.environ.et('REDIS_PASSWORD')
 
 
 @app.route('/')
