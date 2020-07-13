@@ -11,6 +11,11 @@ services:
       - redis:redis
     depends_on:
       - redis
+    environment:
+      - REDIS_HOST: "redis"
+      - REDIS_PASSWORD: "Pidel123123_"
+      - REDIS_DB: "0"
+      - REDIS_PORT: "6379"
   redis:
     image: "redis:alpine"
     expose:
